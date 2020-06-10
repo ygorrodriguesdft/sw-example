@@ -14,6 +14,8 @@ do cache e mudando as respostas das requisições não críticas.
 
 ## Como funciona?
 
+O service worker possui um ciclo de vida, onde alguns eventos ocorrem antes de ele começar a gerenciar requisições e outros eventos, sendo os principais a instalação e ativação, que ocorrem após o primeiro registro do service worker no navegador.
+
 ### Registro
 Primeiramente precisamos verificar em um script se o navegador do usuário suporta o service worker, e em seguida
 podemos registrar o nosso service worker no navegador. Isso é feito no script "js/main.js".
